@@ -1,42 +1,45 @@
-# Facial Expression Recognition with Keras
+Facial Expression Recognition with OpenCV and Keras
 
-This project focuses on Facial Expression Recognition using the Keras library. The goal is to build deep learning models that can accurately detect and classify facial expressions from images or video data.
+This repository contains code for a real-time facial expression recognition system using OpenCV and Keras. The system detects faces in a video stream, predicts the emotions of the detected faces, and overlays the predicted emotion label on the video frames.
 
-## Features
+Introduction
 
-- Utilizes the Keras library for developing facial expression recognition models.
-- Implements deep learning techniques to analyze facial features and interpret emotions.
-- Supports classification of various facial expressions such as happiness, sadness, anger, and more.
-- Suitable for applications in human-computer interaction, psychology, and emotion recognition research.
+This project demonstrates the implementation of a real-time facial expression recognition system using OpenCV and Keras. The system utilizes a pre-trained convolutional neural network (CNN) to classify facial expressions such as happiness, sadness, anger, etc.
 
-## Installation
+Prerequisites
 
-1. Clone the repository: `git clone https://github.com/your_username/facial-expression-recognition.git`
-2. Navigate to the project directory: `cd facial-expression-recognition`
-3. Install the required dependencies: `pip install -r requirements.txt`
+Before you begin, ensure you have met the following requirements:
 
-## Usage
+Python 3.6 or higher is installed.
 
-1. Prepare your dataset of facial expression images or videos.
-2. Preprocess the data by resizing, cropping, or augmenting if necessary.
-3. Train the facial expression recognition model using the provided training script: `python train.py`.
-4. Evaluate the trained model on the test dataset: `python evaluate.py`.
-5. Use the trained model for real-time facial expression recognition by running the `realtime.py` script.
+Required libraries are installed. You can install them using pip:
+pip install opencv-python numpy flask
 
-## Contributing
 
-Contributions are welcome! If you find any issues or have suggestions for improvements, please submit a pull request. For major changes, please open an issue first to discuss the proposed changes.
+Getting Started
 
-## License
+To get started with this project, follow these steps:
+1.Clone the repository:
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
 
-This project is licensed under the [MIT License](LICENSE).
+2.Download the required model weights and haarcascade XML file:
 
-## Acknowledgments
+Download the model weights from the Coursera course materials and place them in the repository root.
+Download the haarcascade XML file from the Coursera course materials and place it in the repository root.
 
-We would like to acknowledge the contributions of the open-source community and the Keras library for providing a powerful tool for facial expression recognition.
+3.Run the Flask app:
+python app.py
 
-## References
+4.Open a web browser and go to http://localhost:5000 to see the real-time facial expression recognition in action.
 
-- List any relevant references or resources related to the project.
-- Include links to papers, articles, or tutorials that inspired or guided the development of the project.
+Project Structure
 
+app.py: The main Flask application that serves the video stream and handles web requests.
+model.py: Defines the FacialExpressionModel class for loading the Keras model and making predictions.
+camera.py: Contains the VideoCamera class responsible for capturing frames from the webcam and performing facial expression recognition.
+static/ and templates/: Directories containing static assets (CSS, images) and HTML templates for the web app.
+Usage
+
+The main page at / displays the real-time video stream with predicted emotion labels overlaid on detected faces.
+You can access the video stream at /video_feed.

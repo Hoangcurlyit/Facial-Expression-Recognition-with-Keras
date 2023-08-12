@@ -16,10 +16,10 @@ This project implements real-time facial expression recognition using OpenCV and
 
 
 ## Files
--app.py: Flask web application that serves the video stream and processes frames for emotion recognition.
--camera.py: Defines the VideoCamera class responsible for capturing frames from the webcam.
--model.py: Contains the FacialExpressionModel class for loading the pre-trained emotion recognition model.
--haarcascade_frontalface_default.xml: Haarcascade Frontal Face Classifier for face detection.
--model_weights.h5: Pre-trained model weights for emotion recognition.
--index.html: HTML template for the web interface.
--README.md: You are currently reading this file.
+- app.py: Flask web application that serves the video stream and processes frames for emotion recognition.
+- camera.py: Defines the VideoCamera class responsible for capturing frames from the webcam.
+- model.py: Contains the FacialExpressionModel class for loading the pre-trained emotion recognition model.
+- haarcascade_frontalface_default.xml: Haarcascade Frontal Face Classifier for face detection.
+- model_weights.h5: Pre-trained model weights for emotion recognition.
+- index.html: HTML template for the web interface.
+- README.md: You are currently reading this file.

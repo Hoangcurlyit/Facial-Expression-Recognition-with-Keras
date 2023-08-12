@@ -11,7 +11,8 @@ This project implements real-time facial expression recognition using OpenCV and
 ## Usage
 1. Make sure you have a webcam connected to your system.
 2. Run the Flask app:
-```python main.py
+```
+python main.py
 3. Open a web browser and navigate to http://localhost:5000 to see the live video stream with emotion predictions.
 
 

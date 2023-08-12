@@ -1,6 +1,6 @@
 # Facial Expression Recognition with OpenCV and Keras
 
-This project implements real-time facial expression recognition using OpenCV and Keras. It detects faces in a video stream and predicts the emotion associated with each detected face.
+This project implements real-time facial expression recognition using OpenCV and Keras. It detects faces in the video stream and predicts the emotion associated with each detected face. This is a project learned at Coursera.org
 
 ## Features
 
